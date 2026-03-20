@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Кейсы — Nordicore</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/data.js" defer></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">NORDICORE</a>
+      <nav class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О компании</a>
+        <a href="services.html">Услуги</a>
+        <a href="portfolio.html">Кейсы</a>
+        <a href="blog.html">Блог</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="btn btn-ghost" data-theme-toggle>Тема</button>
+        <a class="btn btn-primary" href="contact.html">Запросить демо</a>
+        <button class="menu-toggle" data-menu-toggle>☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="eyebrow">Портфолио</div>
+        <h1 class="h1">Кейсы, в которых измеримы скорость, UX и рост</h1>
+        <p class="p">Каждый кейс — отдельная система: архитектура, аналитика, продукт и визуальный опыт.</p>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container" data-filter-group>
+        <div class="filter-bar" style="margin-bottom:24px;">
+          <button class="filter-btn active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="Web">Web</button>
+          <button class="filter-btn" data-filter="Mobile">Mobile</button>
+          <button class="filter-btn" data-filter="Data">Data</button>
+          <button class="filter-btn" data-filter="AI">AI</button>
+        </div>
+        <div class="grid">
+          <article class="card reveal" data-filter-item data-category="Web">
+            <span class="tag">Enterprise</span>
+            <h3 class="h3">Atlas ERP</h3>
+            <p class="p">Единая платформа для 14 заводов.</p>
+            <div class="video-thumb"></div>
+            <div style="margin-top:12px; display:flex; gap:10px;">
+              <button class="btn btn-ghost" data-modal-target="caseAtlas">Превью</button>
+              <a class="btn btn-primary" href="cases/atlas-erp.html">Детали</a>
+            </div>
+          </article>
+          <article class="card reveal" data-filter-item data-category="Mobile">
+            <span class="tag">Mobile</span>
+            <h3 class="h3">Nova Mobile</h3>
+            <p class="p">Экосистема сервисов для 8 млн клиентов.</p>
+            <div class="video-thumb"></div>
+            <div style="margin-top:12px; display:flex; gap:10px;">
+              <button class="btn btn-ghost" data-modal-target="caseNova">Превью</button>
+              <a class="btn btn-primary" href="cases/nova-mobile.html">Детали</a>
+            </div>
+          </article>
+          <article class="card reveal" data-filter-item data-category="Data">
+            <span class="tag">Analytics</span>
+            <h3 class="h3">Lumen B2B</h3>
+            <p class="p">Decision intelligence для логистики.</p>
+            <div class="video-thumb"></div>
+            <div style="margin-top:12px; display:flex; gap:10px;">
+              <button class="btn btn-ghost" data-modal-target="caseLumen">Превью</button>
+              <a class="btn btn-primary" href="cases/atlas-erp.html">Детали</a>
+            </div>
+          </article>
+          <article class="card reveal" data-filter-item data-category="AI">
+            <span class="tag">AI</span>
+            <h3 class="h3">Ora Finance</h3>
+            <p class="p">Платформа риск‑менеджмента.</p>
+            <div class="video-thumb"></div>
+            <div style="margin-top:12px; display:flex; gap:10px;">
+              <button class="btn btn-ghost" data-modal-target="caseOra">Превью</button>
+              <a class="btn btn-primary" href="cases/nova-mobile.html">Детали</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Видео-превью</div>
+            <h2 class="h2">Модальные окна с деталями</h2>
+          </div>
+        </div>
+        <div class="note">Нажмите «Превью», чтобы открыть модальное окно с быстрым обзором метрик, команды и архитектуры.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">NORDICORE</div>
+        <p class="p">Премиальные цифровые платформы для лидеров отрасли.</p>
+      </div>
+      <div>
+        <div class="h3">Контакты</div>
+        <p class="p">hello@nordicore.com</p>
+        <p class="p">+7 (495) 000-12-34</p>
+      </div>
+      <div>
+        <div class="h3">Офисы</div>
+        <p class="p">Москва · Берлин · Дубай</p>
+      </div>
+      <div>
+        <div class="h3">© <span data-year></span></div>
+        <p class="p">Nordicore Digital</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="caseAtlas">
+    <div class="modal-content">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <div class="eyebrow">Atlas ERP</div>
+          <h3 class="h3">Производственная платформа</h3>
+        </div>
+        <button class="btn btn-ghost" data-modal-close>Закрыть</button>
+      </div>
+      <p class="p">Сократили время планирования на 37%, внедрили digital twin и real‑time мониторинг.</p>
+      <a class="btn btn-primary" href="cases/atlas-erp.html">Детали кейса</a>
+    </div>
+  </div>
+
+  <div class="modal" id="caseNova">
+    <div class="modal-content">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <div class="eyebrow">Nova Mobile</div>
+          <h3 class="h3">Мобильная экосистема</h3>
+        </div>
+        <button class="btn btn-ghost" data-modal-close>Закрыть</button>
+      </div>
+      <p class="p">Унифицировали 12 сервисов и улучшили конверсию в оплату на 21%.</p>
+      <a class="btn btn-primary" href="cases/nova-mobile.html">Детали кейса</a>
+    </div>
+  </div>
+
+  <div class="modal" id="caseLumen">
+    <div class="modal-content">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <div class="eyebrow">Lumen B2B</div>
+          <h3 class="h3">Decision Intelligence</h3>
+        </div>
+        <button class="btn btn-ghost" data-modal-close>Закрыть</button>
+      </div>
+      <p class="p">Система прогнозирует риски логистики с точностью 92% и обновляется каждые 5 минут.</p>
+      <a class="btn btn-primary" href="cases/atlas-erp.html">Детали кейса</a>
+    </div>
+  </div>
+
+  <div class="modal" id="caseOra">
+    <div class="modal-content">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <div class="eyebrow">Ora Finance</div>
+          <h3 class="h3">AI Risk Engine</h3>
+        </div>
+        <button class="btn btn-ghost" data-modal-close>Закрыть</button>
+      </div>
+      <p class="p">Непрерывная оценка рисков и автоматическое формирование сценариев.</p>
+      <a class="btn btn-primary" href="cases/nova-mobile.html">Детали кейса</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
